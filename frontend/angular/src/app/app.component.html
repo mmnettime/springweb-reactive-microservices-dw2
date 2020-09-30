@@ -1,0 +1,79 @@
+<div style="text-align:center">
+  <h1>
+    MONGO DB!
+  </h1>
+  </div>
+
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h3>Agregar persona</h3>
+    </div>
+    <div class="card-body">
+
+      <div> 
+        <form id="f01" [formGroup]="formGroup">
+      
+          <label style="margin-left: 10px">Nombre: </label>
+          <input style="margin-left: 10px" type="text" formControlName="nombre"/>
+          <br>
+      
+          <label style="margin-left: 10px">Edad: </label>
+          <input style="margin-left: 10px" type="text" formControlName="edad"/>
+          <br>
+      
+          <button (click)="enviarFormulario()" class="btn btn-danger" style="margin-left: 10px">
+            Guardar
+          </button>
+      
+          <button (click)="actualizarFormulario(persona)" class="btn btn-warning" style="margin-left: 10px">
+            Actualizar
+          </button>
+          <br>
+      
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<br>
+
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h3>Personas en BD:</h3>
+      <div class="card-body">
+        <table class="table table-hover">
+          <thead>
+            <tr class="text-center">
+              <th>Nombre</th>
+              <th>Edad</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let persona of personas" class="text-center">
+              <td>{{persona.nombre}}</td>
+              <td>{{persona.edad}}</td>
+              <td>
+                <button (click)="Editar(persona)" class="btn btn-warning" >Editar</button>
+                <button (click)="Delete(persona)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+              </td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+         
+
+
+
+<router-outlet></router-outlet>

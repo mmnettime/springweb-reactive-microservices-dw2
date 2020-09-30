@@ -1,0 +1,55 @@
+spring:
+  application:
+    name: GATEWAY
+  cloud:
+    gateway:
+       routes:
+         - id: customer-service
+           uri: lb://customer-service
+           predicates:
+             - Path=/customer/**
+           filters:
+             - name: CircuitBreaker
+               args:
+                 name: cliente
+                 fallbackuri: forward:/serviceFallBack
+         - id: account-service
+           uri: lb://account-service
+           predicates:
+             - Path=/account/**
+           filters:
+             - name: CircuitBreaker
+               args:
+                 name: cuenta
+                 fallbackuri: forward:/serviceFallBack
+         - id: persona-service
+           uri: lb://persona-service
+           predicates:
+             - Path=/persona/**
+           filters:
+             - name: CircuitBreaker
+               args:
+                 name: persona
+                 fallbackuri: forward:/serviceFallBack
+server:
+  port: 8989
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
+
+managment:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+
+hystrix:
+  command:
+    fallbackcmd:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
