@@ -7,7 +7,7 @@ import {EventSourcePolyfill} from 'ng-event-source';
 export class NotificationService {
 
   /* -------------------------------------------------------------------------------------------------------------- */
-  private serviceURL = 'http://localhost:8082/rest/persona';
+  private serviceURL = 'http://104.198.148.105:8082/rest/persona';
 
   private httpHeaders = new HttpHeaders({
     'Content-Type': 'application/json',

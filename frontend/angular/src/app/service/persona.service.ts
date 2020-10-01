@@ -7,7 +7,7 @@ import {Persona} from 'src/modelo/persona';
 export class PersonaService {
 
   /* -------------------------------------------------------------------------------------------------------------- */
-  private serviceURL = 'http://localhost:8082/rest/persona';
+  private serviceURL = 'http://104.198.148.105:8082/rest/persona';
 
   private httpHeaders = new HttpHeaders({
     'Content-Type': 'application/json',

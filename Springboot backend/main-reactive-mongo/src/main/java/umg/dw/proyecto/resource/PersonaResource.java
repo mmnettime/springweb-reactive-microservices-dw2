@@ -32,7 +32,7 @@ import reactor.core.publisher.EmitterProcessor;
 import umg.dw.proyecto.repository.PersonaRepository;
 
 
-@CrossOrigin(origins={"http://localhost:8082", "http://localhost:4200","http://localhost:8100"})
+@CrossOrigin(origins={"http://104.198.148.105:8082", "http://104.198.148.105:4200","http://104.198.148.105:8100"})
 @RestController
 @RequestMapping("/rest/persona")
 public class PersonaResource {

@@ -1,5 +1,5 @@
-D:\SpringBoot Gateway, WebFlux, Eureka, Mongo DB + Angular\Springboot backend\main-reactive-mongo\src\main\java\umg\dw\proyecto\ReactiveMongoUMG.java
-D:\SpringBoot Gateway, WebFlux, Eureka, Mongo DB + Angular\Springboot backend\main-reactive-mongo\src\main\java\umg\dw\proyecto\resource\PersonaResource.java
-D:\SpringBoot Gateway, WebFlux, Eureka, Mongo DB + Angular\Springboot backend\main-reactive-mongo\src\main\java\umg\dw\proyecto\repository\PersonaRepository.java
-D:\SpringBoot Gateway, WebFlux, Eureka, Mongo DB + Angular\Springboot backend\main-reactive-mongo\src\main\java\umg\dw\proyecto\model\Persona.java
-D:\SpringBoot Gateway, WebFlux, Eureka, Mongo DB + Angular\Springboot backend\main-reactive-mongo\src\main\java\umg\dw\proyecto\model\PersonaEvent.java
+C:\git\springweb-reactive-microservices-dw2\Springboot backend\main-reactive-mongo\src\main\java\umg\dw\proyecto\model\Persona.java
+C:\git\springweb-reactive-microservices-dw2\Springboot backend\main-reactive-mongo\src\main\java\umg\dw\proyecto\ReactiveMongoUMG.java
+C:\git\springweb-reactive-microservices-dw2\Springboot backend\main-reactive-mongo\src\main\java\umg\dw\proyecto\repository\PersonaRepository.java
+C:\git\springweb-reactive-microservices-dw2\Springboot backend\main-reactive-mongo\src\main\java\umg\dw\proyecto\model\PersonaEvent.java
+C:\git\springweb-reactive-microservices-dw2\Springboot backend\main-reactive-mongo\src\main\java\umg\dw\proyecto\resource\PersonaResource.java
