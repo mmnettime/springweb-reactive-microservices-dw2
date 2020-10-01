@@ -353,7 +353,7 @@ var NotificationService = /** @class */ (function () {
     function NotificationService(httpClient) {
         this.httpClient = httpClient;
         /* -------------------------------------------------------------------------------------------------------------- */
-        this.serviceURL = 'http://localhost:8082/rest/persona';
+        this.serviceURL = 'http://104.198.148.105:8082/rest/persona';
         this.httpHeaders = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
             'Content-Type': 'application/json',
             'Accept': 'application/json'
@@ -423,7 +423,7 @@ var PersonaService = /** @class */ (function () {
     function PersonaService(httpClient) {
         this.httpClient = httpClient;
         /* -------------------------------------------------------------------------------------------------------------- */
-        this.serviceURL = 'http://localhost:8082/rest/persona';
+        this.serviceURL = 'http://104.198.148.105:8082/rest/persona';
         this.httpHeaders = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
             'Content-Type': 'application/json',
             'Accept': 'application/json'
