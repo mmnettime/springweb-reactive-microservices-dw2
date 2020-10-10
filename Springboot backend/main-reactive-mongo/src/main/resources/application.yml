@@ -6,4 +6,10 @@ spring:
     name: persona-service
   data:
     mongodb:
-      uri: mongodb://104.198.148.105:27017/test
+      uri: mongodb://203.0.113.2:27017/test
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://203.0.113.4:8761/eureka}
+  instance:
+    preferIpAddress: true

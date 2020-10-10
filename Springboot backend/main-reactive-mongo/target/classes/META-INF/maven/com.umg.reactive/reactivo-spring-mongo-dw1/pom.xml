@@ -5,7 +5,7 @@
 
 	<groupId>com.umg.reactive</groupId>
 	<artifactId>reactivo-spring-mongo-dw1</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>2.5.1</version>
 	<packaging>jar</packaging>
 
 	<name>reactivo-spring-mongo-dw1</name>

@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Implementation-Title: discovery-service
-Implementation-Version: 1.0-SNAPSHOT
+Implementation-Version: 2.5
 Built-By: Francisco
 Implementation-Vendor-Id: pl.piomin.services
 Build-Jdk: 1.8.0_111

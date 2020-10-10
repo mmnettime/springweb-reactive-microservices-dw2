@@ -25,7 +25,7 @@ spring:
          - id: persona-service
            uri: lb://persona-service
            predicates:
-             - Path=/persona/**
+             - Path=/rest/persona/all**
            filters:
              - name: CircuitBreaker
                args:
@@ -36,7 +36,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://104.198.148.105:8761/eureka}
+      defaultZone: ${EUREKA_URI:http://203.0.113.4:8761/eureka}
   instance:
     preferIpAddress: true
 
